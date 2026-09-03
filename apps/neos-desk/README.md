@@ -38,6 +38,14 @@ Fixtures are captured shapes, not invented ones. The FDA catalyst dictionary and
 the whole 2026 trading calendar are extracted from the Python source at build
 time rather than retyped, so they cannot drift.
 
+They also have to be _plausible_, not just well-shaped. SPX Dash reads the book
+imbalance's 30-tick standard deviation against bands at 0.15% and 0.30%, so a
+fixture that resampled bid and ask independently each tick produced a 26% SD and
+pegged the meter. Its book is generated as a mean-reverting series instead. Note
+that the same page's `BOOK_STRONG` +-2 threshold is a _15% imbalance_ — a
+dislocation, not drift — so it does not fire in a calm book, and the Book signal
+correctly reads +-1/0.
+
 ## Layout
 
 ```

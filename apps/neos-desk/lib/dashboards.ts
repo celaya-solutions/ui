@@ -4,6 +4,7 @@ import {
   CalendarDays,
   Compass,
   FlaskConical,
+  Gauge,
   Grid2x2,
   HeartPulse,
   Layers,
@@ -100,6 +101,15 @@ export const dashboards: Dashboard[] = [
     group: "Live",
     icon: Compass,
     blurb: "Direction across five timeframes, and whether they agree.",
+    live: true,
+  },
+  {
+    name: "spx_dash",
+    href: "/spx-dash",
+    label: "SPX Dash",
+    group: "Live",
+    icon: Gauge,
+    blurb: "Five signals off the Schwab book, summed, with ATR-sized levels.",
     live: true,
   },
   {

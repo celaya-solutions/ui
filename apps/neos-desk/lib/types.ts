@@ -761,3 +761,67 @@ export type SchwabAuthStatus = {
   last_result: { ok?: boolean; message?: string; ts?: number } | null
   server_time: number
 }
+
+/* ── spx_dash · /spx_dash/api/state ───────────────────────────────────────── */
+
+export type ObDirection = "UP" | "DOWN" | "FLAT" | null
+
+export type SpxTick = {
+  time: string
+  price: number
+  lt_bid: number | null
+  lt_ask: number | null
+  lt_diff: number | null
+  cvd: number | null
+  imbalance: number | null
+  /** Standard deviation of imbalance over the 30-tick window, as a percent. */
+  book_sd: number | null
+  book_score: number
+  cvd_score: number
+  mom_score: number
+  ob_score: number
+  trend_score: number
+  /** Sum of the five, −7…+7. */
+  total_score: number
+  ob_dir: ObDirection
+  cvd_delta: number | null
+  trend_delta: number | null
+  confidence: number
+  atr: number | null
+  trade_dir: "LONG" | "SHORT" | null
+  entry: number | null
+  sl: number | null
+  t1: number | null
+  t2: number | null
+  t3: number | null
+  tradeable: boolean
+  gate_reason: string | null
+  session: string
+}
+
+export type SpxQuote = {
+  price: number | null
+  change: number | null
+  change_pct: number | null
+  fetched: number | null
+  symbol: string | null
+  error: string | null
+}
+
+export type SpxDashState = {
+  history: SpxTick[]
+  tick: SpxTick | null
+  spx: SpxQuote
+  /** One staleness verdict, taken from the stream's own health. */
+  stale: boolean
+  health: {
+    connected?: boolean
+    armed?: boolean
+    last_write_age?: number | null
+    detail?: string
+  }
+  tradeable: boolean
+  gate_reason: string | null
+  session: string
+  served_at: number
+}
