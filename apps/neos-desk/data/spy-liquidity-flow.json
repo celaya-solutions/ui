@@ -1,0 +1,167 @@
+{
+  "symbol": "SPY",
+  "price": 641.18,
+  "bid": 641.17,
+  "ask": 641.19,
+  "pools": [
+    {
+      "price": 640.93,
+      "volume": 1419591,
+      "thickness": 1.0
+    },
+    {
+      "price": 640.68,
+      "volume": 1309876,
+      "thickness": 0.9227
+    },
+    {
+      "price": 641.18,
+      "volume": 1171226,
+      "thickness": 0.825
+    },
+    {
+      "price": 641.43,
+      "volume": 1098471,
+      "thickness": 0.7738
+    },
+    {
+      "price": 640.18,
+      "volume": 790598,
+      "thickness": 0.5569
+    },
+    {
+      "price": 639.93,
+      "volume": 722256,
+      "thickness": 0.5088
+    },
+    {
+      "price": 642.18,
+      "volume": 688040,
+      "thickness": 0.4847
+    },
+    {
+      "price": 641.68,
+      "volume": 617912,
+      "thickness": 0.4353
+    },
+    {
+      "price": 640.43,
+      "volume": 454548,
+      "thickness": 0.3202
+    },
+    {
+      "price": 641.93,
+      "volume": 434868,
+      "thickness": 0.3063
+    },
+    {
+      "price": 638.93,
+      "volume": 354388,
+      "thickness": 0.2496
+    },
+    {
+      "price": 642.68,
+      "volume": 333639,
+      "thickness": 0.235
+    },
+    {
+      "price": 642.43,
+      "volume": 332105,
+      "thickness": 0.2339
+    },
+    {
+      "price": 639.43,
+      "volume": 319955,
+      "thickness": 0.2254
+    },
+    {
+      "price": 642.93,
+      "volume": 297669,
+      "thickness": 0.2097
+    },
+    {
+      "price": 639.68,
+      "volume": 290462,
+      "thickness": 0.2046
+    },
+    {
+      "price": 643.93,
+      "volume": 270061,
+      "thickness": 0.1902
+    },
+    {
+      "price": 643.43,
+      "volume": 269391,
+      "thickness": 0.1898
+    },
+    {
+      "price": 638.68,
+      "volume": 266708,
+      "thickness": 0.1879
+    },
+    {
+      "price": 643.68,
+      "volume": 224931,
+      "thickness": 0.1584
+    },
+    {
+      "price": 638.43,
+      "volume": 207262,
+      "thickness": 0.146
+    },
+    {
+      "price": 639.18,
+      "volume": 205224,
+      "thickness": 0.1446
+    },
+    {
+      "price": 643.18,
+      "volume": 185697,
+      "thickness": 0.1308
+    },
+    {
+      "price": 644.18,
+      "volume": 181095,
+      "thickness": 0.1276
+    }
+  ],
+  "order_blocks": {
+    "bullish": [
+      {
+        "low": 639.62,
+        "high": 640.08,
+        "index": 42
+      },
+      {
+        "low": 640.44,
+        "high": 640.79,
+        "index": 51
+      }
+    ],
+    "bearish": [
+      {
+        "low": 642.31,
+        "high": 642.74,
+        "index": 47
+      },
+      {
+        "low": 643.1,
+        "high": 643.48,
+        "index": 55
+      }
+    ]
+  },
+  "volume_arrow": {
+    "direction": "up",
+    "magnitude": 0.2841,
+    "up_volume": 8412000,
+    "down_volume": 4690000
+  },
+  "price_target": {
+    "price": 644.18,
+    "volume": 181095,
+    "thickness": 0.1276
+  },
+  "candle_count": 156,
+  "ts": 1788451190
+}

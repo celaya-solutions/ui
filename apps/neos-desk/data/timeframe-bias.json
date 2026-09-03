@@ -1,0 +1,113 @@
+{
+  "ticker": "SPY",
+  "session": "regular",
+  "refresh_sec": 60,
+  "frames": [
+    {
+      "key": "1m",
+      "label_tf": "1 MIN",
+      "seconds": 60,
+      "tilt": 0.42,
+      "direction": "UP",
+      "arrow": "\u2191",
+      "label": "DIRECTIONAL BULLISH",
+      "strength": "DIRECTIONAL",
+      "bars": 240,
+      "minBars": 22,
+      "close": 641.18,
+      "live": true,
+      "barAgeSec": 12.4,
+      "detail": null
+    },
+    {
+      "key": "5m",
+      "label_tf": "5 MIN",
+      "seconds": 300,
+      "tilt": 0.28,
+      "direction": "UP",
+      "arrow": "\u2191",
+      "label": "LEAN BULLISH",
+      "strength": "LEAN",
+      "bars": 156,
+      "minBars": 22,
+      "close": 641.18,
+      "live": true,
+      "barAgeSec": 48.1,
+      "detail": null
+    },
+    {
+      "key": "15m",
+      "label_tf": "15 MIN",
+      "seconds": 900,
+      "tilt": 0.09,
+      "direction": "FLAT",
+      "arrow": "\u2192",
+      "label": "BALANCED",
+      "strength": "BALANCED",
+      "bars": 96,
+      "minBars": 22,
+      "close": 641.18,
+      "live": true,
+      "barAgeSec": 210.0,
+      "detail": null
+    },
+    {
+      "key": "1h",
+      "label_tf": "1 HOUR",
+      "seconds": 3600,
+      "tilt": -0.34,
+      "direction": "DOWN",
+      "arrow": "\u2193",
+      "label": "LEAN BEARISH",
+      "strength": "LEAN",
+      "bars": 64,
+      "minBars": 22,
+      "close": 641.18,
+      "live": true,
+      "barAgeSec": 1840.0,
+      "detail": null
+    },
+    {
+      "key": "4h",
+      "label_tf": "4 HOUR",
+      "seconds": 14400,
+      "tilt": null,
+      "direction": null,
+      "arrow": "\u2014",
+      "label": "NO DATA",
+      "strength": null,
+      "bars": 14,
+      "minBars": 22,
+      "close": 640.92,
+      "live": false,
+      "barAgeSec": 9200.0,
+      "detail": "14/22 bars"
+    }
+  ],
+  "alignment": {
+    "score": 0.1125,
+    "label": "BALANCED (SPLIT)",
+    "direction": "FLAT",
+    "arrow": "\u2192",
+    "up": 2,
+    "down": 1,
+    "flat": 1,
+    "measured": 4,
+    "total": 5
+  },
+  "barsAgeSec": 18.6,
+  "fetchError": null,
+  "tick": {
+    "price": 641.18,
+    "ts": 1788451198,
+    "source": "ibkr"
+  },
+  "tickAgeSec": 1.4,
+  "method": {
+    "formula": "tanh(1.0*(EMA9-EMA21)/ATR14 + 0.5*(close-EMA9)/ATR14)",
+    "flatBand": 0.15,
+    "minBars": 22,
+    "barSource": "yfinance (delayed) + live desk tick on the newest bar"
+  },
+  "generatedAt": 1788451200
+}

@@ -1,0 +1,162 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* NEO Unified — the trading-desk palette from the Python app's web/theme.css,
+   expressed as shadcn design tokens. Hex → oklch, same colours:
+   bg-0 #0a0c0f · bg-1 #0f1216 · bg-2 #161a20 · bg-3 #1d232b · line #232a33
+   text #e6edf3 · dim #8b97a6 · faint #5b6675
+   green #3fe08f · red #ff5d5d · amber #ffb454 · blue #6db3ff · violet #b08cff
+   The desk is a dark-only surface, so :root and .dark carry the same values —
+   `dark:` variants inside the shadcn primitives then resolve the way they do
+   in the library's own dark theme. */
+@theme inline {
+  --font-sans: var(--font-display);
+  --font-mono: var(--font-data);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* desk-specific semantics the shadcn token set has no slot for */
+  --color-up: var(--up);
+  --color-down: var(--down);
+  --color-warn: var(--warn);
+  --color-info: var(--info);
+  --color-special: var(--special);
+  --color-faint: var(--faint);
+  --color-line-soft: var(--line-soft);
+  --color-raised: var(--raised);
+}
+
+:root,
+.dark {
+  --radius: 0.25rem; /* theme.css --r: 4px */
+
+  --background: oklch(0.1535 0.0072 258.4); /* bg-0 */
+  --foreground: oklch(0.9425 0.0111 243.66); /* text */
+  --card: oklch(0.1808 0.0095 255.64); /* bg-1 */
+  --card-foreground: oklch(0.9425 0.0111 243.66);
+  --popover: oklch(0.2163 0.0133 258.37); /* bg-2 */
+  --popover-foreground: oklch(0.9425 0.0111 243.66);
+
+  --primary: oklch(0.8056 0.175 156.26); /* green — signal */
+  --primary-foreground: oklch(0.1535 0.0072 258.4);
+  --secondary: oklch(0.2163 0.0133 258.37); /* bg-2 */
+  --secondary-foreground: oklch(0.9425 0.0111 243.66);
+  --muted: oklch(0.2163 0.0133 258.37);
+  --muted-foreground: oklch(0.6717 0.0262 254.02); /* text-dim */
+  --accent: oklch(0.2538 0.0175 255.68); /* bg-3 — hover */
+  --accent-foreground: oklch(0.9425 0.0111 243.66);
+  --destructive: oklch(0.6922 0.1976 23.83); /* red */
+  --destructive-foreground: oklch(0.1535 0.0072 258.4);
+
+  --border: oklch(0.2822 0.0194 254.82); /* line */
+  --input: oklch(0.2822 0.0194 254.82);
+  --ring: oklch(0.472 0.0933 159.22); /* green-dim */
+
+  --up: oklch(0.8056 0.175 156.26);
+  --down: oklch(0.6922 0.1976 23.83);
+  --warn: oklch(0.8238 0.1408 70.17); /* amber */
+  --info: oklch(0.7521 0.1313 251.74); /* blue */
+  --special: oklch(0.7213 0.1649 296.47); /* violet */
+  --faint: oklch(0.5064 0.0275 256.18); /* text-faint */
+  --line-soft: oklch(0.2374 0.0154 256.81);
+  --raised: oklch(0.2163 0.0133 258.37);
+
+  /* Series fills, not status text. The NEO accents above are tuned as bright
+     signal colours on near-black (OKLCH L 0.69–0.82) — too light to sit as
+     areas on the panel surface. These are the same five hues stepped down into
+     the dark-mode chart band (L 0.48–0.67) and validated: lightness band,
+     chroma floor, adjacent-pair CVD separation (deutan ΔE 23.0 worst), normal
+     vision (ΔE 24.4) and ≥3:1 against #0f1216 all pass. Tritan separation sits
+     at 7.9, so every multi-series chart also carries a legend or direct labels
+     — identity is never colour alone. Assign in this order; never cycle. */
+  --chart-1: oklch(0.6603 0.1591 156.37); /* green */
+  --chart-2: oklch(0.5859 0.155 251.73); /* blue */
+  --chart-3: oklch(0.6414 0.1388 70.17); /* amber */
+  --chart-4: oklch(0.545 0.1851 296.3); /* violet */
+  --chart-5: oklch(0.5596 0.2003 23.74); /* red */
+
+  --sidebar: oklch(0.1808 0.0095 255.64); /* bg-1 */
+  --sidebar-foreground: oklch(0.6717 0.0262 254.02);
+  --sidebar-primary: oklch(0.8056 0.175 156.26);
+  --sidebar-primary-foreground: oklch(0.1535 0.0072 258.4);
+  --sidebar-accent: oklch(0.2163 0.0133 258.37);
+  --sidebar-accent-foreground: oklch(0.9425 0.0111 243.66);
+  --sidebar-border: oklch(0.2822 0.0194 254.82);
+  --sidebar-ring: oklch(0.472 0.0933 159.22);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-mono text-[13px] antialiased;
+    font-variant-numeric: tabular-nums;
+  }
+  /* Data is read in columns; never let a price jitter its own width. */
+  .tabular,
+  th,
+  td {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@utility grid-texture {
+  /* the shell's faint graph-paper wash, from shell.html body::before */
+  background-image:
+    linear-gradient(var(--line-soft) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse at 70% 0%, #000 0%, transparent 75%);
+}
+
+/* the live dot's expanding ring, from shell.html @keyframes pulse */
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklch, var(--primary) 50%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 6px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}

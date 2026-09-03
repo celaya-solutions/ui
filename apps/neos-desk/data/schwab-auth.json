@@ -1,0 +1,23 @@
+{
+  "credentials_configured": true,
+  "have_tokens": true,
+  "redirect_uri": "https://neos-trading-desk.up.railway.app/schwab_auth/callback",
+  "mode": "auto",
+  "callback_path": "/schwab_auth/callback",
+  "refresh_age_sec": 691200,
+  "refresh_expires_in_sec": -86400,
+  "refresh_expired": true,
+  "ttl_sec": 604800,
+  "stream": {
+    "connected": false,
+    "armed": false,
+    "last_write_age": null,
+    "detail": "refresh token expired"
+  },
+  "last_result": {
+    "ok": false,
+    "message": "refresh_token expired after 7 days",
+    "ts": 1788364800
+  },
+  "server_time": 1788451200
+}

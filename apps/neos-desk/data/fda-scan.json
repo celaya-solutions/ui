@@ -1,0 +1,215 @@
+{
+  "ts": 1788450400,
+  "results": [
+    {
+      "ticker": "SRPT",
+      "company": "Sarepta Therapeutics",
+      "fcs": 94,
+      "fcs_label": "\ud83d\udd25 HIGH CONVICTION",
+      "catalyst_types": [
+        "pdufa",
+        "priority"
+      ],
+      "days_since": 1,
+      "file_date": "2026-09-02",
+      "price": 18.42,
+      "change_pct": 6.8,
+      "first_alert_price": 16.2,
+      "first_alert_ts": 1788364000,
+      "change_since_alert_pct": 13.7,
+      "market_cap": 1840000000,
+      "mktcap_str": "1.84B",
+      "short_float": 28.4,
+      "short_ratio": 5.2,
+      "trade_stage": "Pre-PDUFA accumulation",
+      "filing_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SRPT&type=8-K"
+    },
+    {
+      "ticker": "VKTX",
+      "company": "Viking Therapeutics",
+      "fcs": 88,
+      "fcs_label": "\ud83d\udd25 HIGH CONVICTION",
+      "catalyst_types": [
+        "trial_readout",
+        "breakthrough"
+      ],
+      "days_since": 2,
+      "file_date": "2026-09-01",
+      "price": 41.9,
+      "change_pct": 12.4,
+      "first_alert_price": 37.1,
+      "first_alert_ts": 1788277600,
+      "change_since_alert_pct": 12.94,
+      "market_cap": 4120000000,
+      "mktcap_str": "4.12B",
+      "short_float": 19.8,
+      "short_ratio": 3.4,
+      "trade_stage": "Readout window open",
+      "filing_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=VKTX&type=8-K"
+    },
+    {
+      "ticker": "ANAB",
+      "company": "AnaptysBio",
+      "fcs": 76,
+      "fcs_label": "\u26a1 STRONG",
+      "catalyst_types": [
+        "adcom"
+      ],
+      "days_since": 3,
+      "file_date": "2026-08-31",
+      "price": 24.16,
+      "change_pct": -2.1,
+      "first_alert_price": 25.4,
+      "first_alert_ts": 1788191200,
+      "change_since_alert_pct": -4.88,
+      "market_cap": 712000000,
+      "mktcap_str": "712M",
+      "short_float": 16.2,
+      "short_ratio": 4.1,
+      "trade_stage": "AdCom scheduled",
+      "filing_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=ANAB&type=8-K"
+    },
+    {
+      "ticker": "RIGL",
+      "company": "Rigel Pharmaceuticals",
+      "fcs": 71,
+      "fcs_label": "\u26a1 STRONG",
+      "catalyst_types": [
+        "breakthrough",
+        "orphan"
+      ],
+      "days_since": 5,
+      "file_date": "2026-08-29",
+      "price": 6.84,
+      "change_pct": 3.2,
+      "first_alert_price": 6.1,
+      "first_alert_ts": 1788018400,
+      "change_since_alert_pct": 12.13,
+      "market_cap": 289000000,
+      "mktcap_str": "289M",
+      "short_float": 12.4,
+      "short_ratio": 2.8,
+      "trade_stage": "Designation granted",
+      "filing_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=RIGL&type=8-K"
+    },
+    {
+      "ticker": "ALT",
+      "company": "Altimmune",
+      "fcs": 58,
+      "fcs_label": "\ud83d\udc40 WATCH",
+      "catalyst_types": [
+        "nda_bla",
+        "fast_track"
+      ],
+      "days_since": 9,
+      "file_date": "2026-08-25",
+      "price": 9.12,
+      "change_pct": -1.4,
+      "first_alert_price": 9.44,
+      "first_alert_ts": 1787672800,
+      "change_since_alert_pct": -3.39,
+      "market_cap": 946000000,
+      "mktcap_str": "946M",
+      "short_float": 22.7,
+      "short_ratio": 6.3,
+      "trade_stage": "Filing accepted",
+      "filing_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=ALT&type=8-K"
+    },
+    {
+      "ticker": "CRBU",
+      "company": "Caribou Biosciences",
+      "fcs": 34,
+      "fcs_label": "\ud83d\udca4 LOW",
+      "catalyst_types": [
+        "orphan"
+      ],
+      "days_since": 18,
+      "file_date": "2026-08-16",
+      "price": 1.86,
+      "change_pct": 0.5,
+      "first_alert_price": null,
+      "first_alert_ts": null,
+      "change_since_alert_pct": null,
+      "market_cap": 178000000,
+      "mktcap_str": "178M",
+      "short_float": 8.9,
+      "short_ratio": 1.7,
+      "trade_stage": "No near-term event",
+      "filing_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=CRBU&type=8-K"
+    }
+  ],
+  "catalyst_types": {
+    "pdufa": {
+      "label": "PDUFA Date",
+      "score": 100,
+      "emoji": "\ud83d\udd34",
+      "desc": "FDA approval/rejection decision \u2014 binary event",
+      "full_name": "Prescription Drug User Fee Act Decision Deadline",
+      "trade_note": "FDA's legally binding deadline to approve or reject. Biggest binary move, highest IV."
+    },
+    "adcom": {
+      "label": "Advisory Committee Meeting",
+      "score": 95,
+      "emoji": "\ud83d\udfe5",
+      "desc": "Outside expert panel votes on recommending approval",
+      "full_name": "FDA Advisory Committee Meeting (AdCom)",
+      "trade_note": "Outside expert panel votes on recommending approval. FDA usually follows. Happens weeks before PDUFA, cheaper options entry."
+    },
+    "trial_readout": {
+      "label": "Phase 2/3 Readout",
+      "score": 92,
+      "emoji": "\ud83d\udfe9",
+      "desc": "Company releases efficacy/safety data \u2014 binary, no fixed date",
+      "full_name": "Phase 2 / Phase 3 Clinical Trial Readout",
+      "trade_note": "Company releases efficacy/safety data. Equally binary to PDUFA, no fixed date."
+    },
+    "breakthrough": {
+      "label": "Breakthrough Therapy",
+      "score": 90,
+      "emoji": "\ud83d\udfe3",
+      "desc": "Early evidence substantially better than existing tx",
+      "full_name": "Breakthrough Therapy Designation",
+      "trade_note": "FDA working hand-in-hand with company. High bar to receive, historically higher approval odds."
+    },
+    "accelerated": {
+      "label": "Accelerated Approval",
+      "score": 85,
+      "emoji": "\ud83d\udfe4",
+      "desc": "Approval based on surrogate endpoint",
+      "full_name": "Accelerated Approval",
+      "trade_note": "Approved on surrogate endpoint before full survival data. Tail risk if confirmatory trial fails."
+    },
+    "priority": {
+      "label": "Priority Review",
+      "score": 75,
+      "emoji": "\ud83d\udfe0",
+      "desc": "6-month FDA review vs standard 12 months",
+      "full_name": "Priority Review Designation",
+      "trade_note": "Review clock cut from 12 months to 6. Signals meaningful improvement over existing options."
+    },
+    "nda_bla": {
+      "label": "NDA/BLA Filing",
+      "score": 65,
+      "emoji": "\u26aa",
+      "desc": "New Drug Application submitted to FDA",
+      "full_name": "New Drug Application / Biologics License Application Acceptance",
+      "trade_note": "FDA agrees to formally review. Modest bullish, not the real catalyst."
+    },
+    "fast_track": {
+      "label": "Fast Track",
+      "score": 60,
+      "emoji": "\ud83d\udd35",
+      "desc": "FDA agrees to expedite dev/review process",
+      "full_name": "Fast Track Designation",
+      "trade_note": "Rolling review process benefit. Easiest to get, low stock impact."
+    },
+    "orphan": {
+      "label": "Orphan Drug",
+      "score": 45,
+      "emoji": "\ud83d\udfe1",
+      "desc": "Rare disease designation \u2014 tax incentives + exclusivity",
+      "full_name": "Orphan Drug Designation",
+      "trade_note": "For diseases affecting under 200K patients. Business benefits only, lowest trading impact."
+    }
+  }
+}

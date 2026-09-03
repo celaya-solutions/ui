@@ -1,0 +1,113 @@
+{
+  "ts": 1788451200,
+  "uptime_sec": 27431,
+  "stream": {
+    "daemon_running": true,
+    "last_write_age": 0.8,
+    "connected_secs": 27180,
+    "last_push_age": 1.2
+  },
+  "schwab": {
+    "daemon_running": false,
+    "last_write_age": null,
+    "connected_secs": null,
+    "last_push_age": null,
+    "refresh_token_expired": true
+  },
+  "sources": {
+    "ibkr": {
+      "status": "live",
+      "detail": "SPY depth \u00b7 10 levels \u00b7 4.1 msg/s"
+    },
+    "schwab": {
+      "status": "off",
+      "detail": "no credentials"
+    }
+  },
+  "quantdata": {
+    "configured": true,
+    "calls": 218,
+    "errors": 3,
+    "last_ok_age": 46,
+    "cache": {
+      "entries": 12,
+      "fresh": 9,
+      "ttl_sec": 120
+    },
+    "last_error": {
+      "at": 1788446520,
+      "status": 429,
+      "detail": "rate limit exceeded, retry after 60s"
+    }
+  },
+  "ibkr": {
+    "connected": true,
+    "daemon_running": true,
+    "account": "DU7418093"
+  },
+  "ibkr_oauth": {
+    "enabled": true,
+    "session_ok": true,
+    "lst_valid": true,
+    "lst_expires_in": 51240
+  },
+  "modules": [
+    "bank_rule_tunnel",
+    "quant_flow",
+    "setup_tracker",
+    "spy_bookmap_ibkr",
+    "spy_heatmap",
+    "spy_liquidity_flow",
+    "system_status",
+    "timeframe_bias"
+  ],
+  "buses": {
+    "bank_rule_tunnel": 1,
+    "quant_flow": 0,
+    "setup_tracker": 2,
+    "spy_bookmap_ibkr": 3,
+    "spy_heatmap": 1,
+    "spy_liquidity_flow": 0,
+    "system_status": 1,
+    "timeframe_bias": 1
+  },
+  "scanners": {
+    "squeeze": {
+      "age_sec": 412,
+      "fresh": true,
+      "count": 14
+    },
+    "surge": {
+      "age_sec": 96,
+      "fresh": true,
+      "count": 23
+    },
+    "fda": {
+      "age_sec": 9840,
+      "fresh": false,
+      "count": 6
+    }
+  },
+  "trading": {
+    "setup_locked": true,
+    "setup_dir": "long",
+    "setup_age_sec": 734,
+    "open_trades": 2,
+    "closed_trades": 41,
+    "autoexec_enabled": false,
+    "autoexec_circuit_open": false,
+    "autoexec_dlq_count": 0
+  },
+  "metrics": {
+    "rss_mb": 318.4,
+    "cpu_user_s": 1904.6,
+    "python": "3.14.0"
+  },
+  "deploy": {
+    "commit": "9baea3b1c4e0",
+    "branch": "main",
+    "region": "us-west2",
+    "env": "production",
+    "domain": "neos-trading-desk.up.railway.app"
+  }
+}

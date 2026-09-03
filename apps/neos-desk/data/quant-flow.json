@@ -1,0 +1,356 @@
+{
+  "ticker": "SPY",
+  "generatedAt": 1788451200,
+  "session": "regular",
+  "configured": true,
+  "refresh_sec": 30,
+  "cache": {
+    "entries": 12,
+    "fresh": 9,
+    "ttl_sec": 120
+  },
+  "layers": {
+    "1_price_l2": {
+      "symbol": "SPY",
+      "price": 641.18,
+      "bid": 641.17,
+      "ask": 641.19,
+      "ladder": {
+        "bids": [
+          [
+            641.17,
+            1840
+          ],
+          [
+            641.16,
+            2210
+          ],
+          [
+            641.15,
+            960
+          ],
+          [
+            641.14,
+            3140
+          ],
+          [
+            641.13,
+            1275
+          ],
+          [
+            641.12,
+            880
+          ],
+          [
+            641.11,
+            2050
+          ],
+          [
+            641.1,
+            1490
+          ],
+          [
+            641.09,
+            720
+          ],
+          [
+            641.08,
+            1930
+          ]
+        ],
+        "asks": [
+          [
+            641.19,
+            1610
+          ],
+          [
+            641.2,
+            2480
+          ],
+          [
+            641.21,
+            1120
+          ],
+          [
+            641.22,
+            890
+          ],
+          [
+            641.23,
+            2760
+          ],
+          [
+            641.24,
+            1340
+          ],
+          [
+            641.25,
+            1010
+          ],
+          [
+            641.26,
+            2190
+          ],
+          [
+            641.27,
+            640
+          ],
+          [
+            641.28,
+            1580
+          ]
+        ]
+      },
+      "sources": {
+        "ibkr": {
+          "connected": true,
+          "armed": true,
+          "last_write_age": 0.8
+        },
+        "schwab": {
+          "connected": false,
+          "armed": false,
+          "detail": "no credentials"
+        }
+      },
+      "venueNotice": "Desk depth is IBKR's view of a single exchange (ARCA), not consolidated US-equity depth."
+    },
+    "2_options_flow": {
+      "data": [
+        {
+          "neosGrade": "A",
+          "neosGradeScore": 92,
+          "contractType": "CALL",
+          "expirationDate": "2026-09-05",
+          "strikePrice": 645.0,
+          "premium": 4820000,
+          "size": 12400,
+          "volume": 18900,
+          "openInterest": 9200,
+          "tradeSideCode": "ASK",
+          "direction": "BULLISH",
+          "isGoldenSweep": true,
+          "tradeConsolidationType": "SWEEP",
+          "isUnusual": true,
+          "isOpeningPosition": true,
+          "isVolumeGreaterThanOpenInterest": true
+        },
+        {
+          "neosGrade": "A",
+          "neosGradeScore": 88,
+          "contractType": "CALL",
+          "expirationDate": "2026-09-19",
+          "strikePrice": 650.0,
+          "premium": 3140000,
+          "size": 8600,
+          "volume": 11200,
+          "openInterest": 14800,
+          "tradeSideCode": "ASK",
+          "direction": "BULLISH",
+          "tradeConsolidationType": "SWEEP",
+          "isUnusual": true,
+          "isOpeningPosition": true
+        },
+        {
+          "neosGrade": "B",
+          "neosGradeScore": 74,
+          "contractType": "PUT",
+          "expirationDate": "2026-09-05",
+          "strikePrice": 635.0,
+          "premium": 2760000,
+          "size": 7100,
+          "volume": 8400,
+          "openInterest": 21400,
+          "tradeSideCode": "ASK",
+          "direction": "BEARISH",
+          "tradeConsolidationType": "BLOCK",
+          "isUnusual": true
+        },
+        {
+          "neosGrade": "B",
+          "neosGradeScore": 69,
+          "contractType": "CALL",
+          "expirationDate": "2026-09-05",
+          "strikePrice": 642.0,
+          "premium": 1980000,
+          "size": 9800,
+          "volume": 24100,
+          "openInterest": 6200,
+          "tradeSideCode": "BID",
+          "direction": "NEUTRAL",
+          "isVolumeGreaterThanOpenInterest": true
+        },
+        {
+          "neosGrade": "C",
+          "neosGradeScore": 58,
+          "contractType": "PUT",
+          "expirationDate": "2026-09-12",
+          "strikePrice": 630.0,
+          "premium": 1420000,
+          "size": 5400,
+          "volume": 6100,
+          "openInterest": 18900,
+          "tradeSideCode": "ASK",
+          "direction": "BEARISH",
+          "isOpeningPosition": true
+        },
+        {
+          "neosGrade": "C",
+          "neosGradeScore": 51,
+          "contractType": "CALL",
+          "expirationDate": "2026-09-05",
+          "strikePrice": 648.0,
+          "premium": 940000,
+          "size": 6200,
+          "volume": 7400,
+          "openInterest": 11100,
+          "tradeSideCode": "ASK",
+          "direction": "BULLISH",
+          "tradeConsolidationType": "SWEEP"
+        },
+        {
+          "neosGrade": "C",
+          "neosGradeScore": 44,
+          "contractType": "PUT",
+          "expirationDate": "2026-09-05",
+          "strikePrice": 638.0,
+          "premium": 610000,
+          "size": 3100,
+          "volume": 4200,
+          "openInterest": 8800,
+          "tradeSideCode": "BID",
+          "direction": "NEUTRAL"
+        }
+      ],
+      "bullishPremium": 8900000,
+      "bearishPremium": 4180000,
+      "bullishShare": 0.6804,
+      "bias": {
+        "tilt": 0.3609,
+        "label": "DIRECTIONAL BULLISH",
+        "bullishPremium": 8900000,
+        "bearishPremium": 4180000,
+        "callPremium": 10880000,
+        "putPremium": 4790000,
+        "callShare": 0.6943,
+        "sampleSize": 7
+      },
+      "gradeNotice": "neosGrade is a local NEOS prioritization score, not a Quant Data field"
+    },
+    "3_gamma_exposure_by_strike": {
+      "stockPrice": 641.18,
+      "topPositive": [
+        {
+          "strike": 650.0,
+          "netGammaExposure": 184200000
+        },
+        {
+          "strike": 645.0,
+          "netGammaExposure": 121600000
+        },
+        {
+          "strike": 642.0,
+          "netGammaExposure": 64800000
+        },
+        {
+          "strike": 641.0,
+          "netGammaExposure": 18400000
+        }
+      ],
+      "topNegative": [
+        {
+          "strike": 635.0,
+          "netGammaExposure": -146300000
+        },
+        {
+          "strike": 630.0,
+          "netGammaExposure": -97500000
+        },
+        {
+          "strike": 638.0,
+          "netGammaExposure": -88700000
+        },
+        {
+          "strike": 640.0,
+          "netGammaExposure": -42100000
+        }
+      ],
+      "topAbsolute": [
+        {
+          "strike": 650.0,
+          "netGammaExposure": 184200000
+        },
+        {
+          "strike": 635.0,
+          "netGammaExposure": -146300000
+        },
+        {
+          "strike": 645.0,
+          "netGammaExposure": 121600000
+        },
+        {
+          "strike": 630.0,
+          "netGammaExposure": -97500000
+        },
+        {
+          "strike": 638.0,
+          "netGammaExposure": -88700000
+        },
+        {
+          "strike": 642.0,
+          "netGammaExposure": 64800000
+        },
+        {
+          "strike": 640.0,
+          "netGammaExposure": -42100000
+        },
+        {
+          "strike": 641.0,
+          "netGammaExposure": 18400000
+        }
+      ]
+    },
+    "4_dark_pool": {
+      "levels": {
+        "latestStockPrice": 641.18,
+        "topLevels": [
+          {
+            "price": 640.42,
+            "notionalValue": 412800000,
+            "size": 644000
+          },
+          {
+            "price": 638.1,
+            "notionalValue": 298400000,
+            "size": 467500
+          },
+          {
+            "price": 643.75,
+            "notionalValue": 187200000,
+            "size": 290800
+          },
+          {
+            "price": 635.9,
+            "notionalValue": 141600000,
+            "size": 222700
+          },
+          {
+            "price": 646.2,
+            "notionalValue": 96300000,
+            "size": 149000
+          }
+        ]
+      },
+      "intradayFlow": {
+        "error": "dark-flow returned 429 (rate limit)",
+        "status": 429
+      }
+    }
+  },
+  "cautions": [
+    "neosGrade is a local desk score. Quant Data publishes no grade field.",
+    "Layers 2-4 are REST snapshots, not a live tape \u2014 Quant Data streaming is unreleased.",
+    "Dark-pool prints are not proof of accumulation.",
+    "Gamma levels are scenarios, not guaranteed pins."
+  ]
+}
